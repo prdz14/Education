@@ -1,22 +1,27 @@
 @import url("font.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   vertical-align: middle;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 .container {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 }
+
 :root {
   --blue: #086cf9;
   --black: #222222;
@@ -24,59 +29,71 @@ li {
   --light-blue: #d3e5fe;
   --dm-sans: "DM Sans";
 }
+
 body {
   font-family: var(--dm-sans);
   font-weight: 400;
 }
+
 /* header */
 .nav {
   padding: 40px 0 35px;
 }
+
 .nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   color: var(--black);
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
 }
+
 .nav_list {
   display: flex;
   gap: 40px;
 }
+
 .nav_link {
   color: var(--black);
   font-size: 16px;
   line-height: 25px;
   transition: 0.4s;
 }
+
 .nav_link:hover {
   color: var(--blue);
   transition: 0.4s;
 }
+
 .nav_signs {
   display: flex;
 }
+
 .sign_in {
   padding: 12px 24px;
   color: var(--black);
   border-radius: 4px;
   transition: 0.4s;
 }
+
 .sign_up {
   padding: 12px 24px;
   color: var(--black);
   border-radius: 4px;
   transition: 0.4s;
 }
+
 .sign_in:hover {
   background: var(--blue);
   color: var(--white);
   transition: 0.4s;
 }
+
 .sign_up:hover {
   background: var(--blue);
   color: var(--white);
@@ -88,11 +105,13 @@ body {
   min-height: 740px;
   padding: 200px 0 280px;
 }
+
 .intro .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .intro_title {
   color: var(--white);
   font-size: 56px;
@@ -101,6 +120,7 @@ body {
   text-align: center;
   padding-bottom: 25px;
 }
+
 .intro_subtitle {
   color: var(--white);
   font-size: 16px;
@@ -109,6 +129,7 @@ body {
   font-weight: 400;
   padding-bottom: 55px;
 }
+
 .intro_btn {
   display: inline-block;
   font-weight: 500;
@@ -120,10 +141,12 @@ body {
   background: var(--blue);
   transition: 0.4s;
 }
+
 .intro_btn:hover {
   transform: scale(1.1);
   transition: 0.4s;
 }
+
 /* main */
 .about_up {
   display: flex;
@@ -134,39 +157,46 @@ body {
   border-radius: 4px;
   box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.08);
 }
+
 .about_up-item {
   display: flex;
   align-items: center;
   gap: 24px;
 }
+
 .about_item-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 47px;
   color: var(--black);
 }
+
 .about_item-subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 155%;
   color: var(--blue);
 }
+
 .about_up {
   margin-top: -97px;
   margin-bottom: 130px;
 }
+
 .about_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-bottom: 130px;
 }
+
 .about_item-title {
   font-weight: 700;
   font-size: 46px;
   line-height: 62px;
   margin-bottom: 24px;
 }
+
 .about_item-txt {
   font-weight: 400;
   font-size: 16px;
@@ -174,6 +204,7 @@ body {
   color: #555555;
   margin-bottom: 16px;
 }
+
 .about_item-below {
   font-weight: 400;
   font-size: 20px;
@@ -181,6 +212,7 @@ body {
   color: #333333;
   margin-bottom: 32px;
 }
+
 .about_item-btn {
   padding: 16px 32px;
   background: var(--blue);
@@ -189,13 +221,16 @@ body {
   color: var(--white);
   transition: 0.4s;
 }
+
 .about_item-btn:hover {
   transform: scale(1.1);
   transition: 0.4s;
 }
+
 .services {
   margin-bottom: 130px;
 }
+
 .services_title {
   text-align: center;
   margin-bottom: 12px;
@@ -204,6 +239,7 @@ body {
   line-height: 62px;
   color: #222222;
 }
+
 .services_subtitle {
   font-weight: 400;
   font-size: 16px;
@@ -214,16 +250,19 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .services_grid {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   justify-content: space-between;
 }
+
 .services_item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .services_item-title {
   text-align: center;
   margin: 24px 0 16px;
@@ -232,6 +271,7 @@ body {
   line-height: 31px;
   color: #222222;
 }
+
 .services_item-subtitle {
   text-align: center;
   font-weight: 400;
@@ -239,10 +279,12 @@ body {
   line-height: 155%;
   color: #555555;
 }
+
 .course {
   padding: 60px 0;
   background: #ecf4ff;
 }
+
 .course_title {
   text-align: center;
   font-weight: 700;
@@ -250,6 +292,7 @@ body {
   line-height: 62px;
   color: var(--black);
 }
+
 .course_subtitle {
   font-weight: 400;
   font-size: 16px;
@@ -260,6 +303,7 @@ body {
   margin: auto;
   padding-bottom: 50px;
 }
+
 .course_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -267,11 +311,13 @@ body {
   gap: 30px;
   margin-bottom: 50px;
 }
+
 .course_item {
   padding: 24px 24px 35px 24px;
   background: var(--white);
   border-radius: 6px;
 }
+
 .course_item-frame {
   display: flex;
   justify-content: space-between;
@@ -279,36 +325,42 @@ body {
   border-bottom: 0.5px solid #e9e8e8;
   padding: 24px 0;
 }
+
 .course_frame-txt {
   color: #555555;
   font-weight: 400;
   font-size: 16px;
   line-height: 155%;
 }
+
 .course_item-up {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
 }
+
 .course_item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: #333333;
 }
+
 .course_item-price {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: var(--blue);
 }
+
 .course_item-txt {
   font-weight: 400;
   font-size: 14px;
   line-height: 155%;
   color: #555555;
 }
+
 .course_btn {
   padding: 16px 32px;
   background: var(--blue);
@@ -318,4 +370,71 @@ body {
   justify-content: center;
   max-width: max-content;
   margin: auto;
+}
+
+.mentor {
+  padding: 130px 0;
+}
+
+.mentor_title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.mentor_subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  text-align: center;
+  color: #444444;
+  padding-bottom: 50px;
+  max-width: 550px;
+  margin: auto;
+}
+
+.mentor_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.mentor_grid-item {
+  box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.mentor_item-txt {
+  padding: 32px;
+}
+
+.mentor_item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.mentor_item-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  color: #555555;
+  margin-bottom: 25px;
+}
+
+.mentor_item-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555555;
+}
+
+.mentor_item-down-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
