@@ -38,6 +38,9 @@ body {
 /* header */
 .nav {
   padding: 40px 0 35px;
+  position: fixed;
+  background: white;
+  width: 100%;
 }
 
 .nav .container {
@@ -605,4 +608,9 @@ body {
   padding: 14px;
   background: var(--white);
   border-radius: 4px;
+}
+
+/* media */
+.media {
+  display: none;
 }
