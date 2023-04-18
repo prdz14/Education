@@ -591,6 +591,10 @@ body {
   line-height: 155%;
 }
 
+.blog_item-img {
+  width: 100%;
+}
+
 /* footer */
 
 .footer {
