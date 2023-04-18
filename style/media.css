@@ -1,6 +1,26 @@
 @media (max-width:1440px) {}
 
-@media (max-width:1240px) {}
+@media (max-width:1240px) {
+    .course_grid {
+        grid-template-columns: unset;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-template-rows: unset;
+    }
+
+    .course_item {
+        max-width: 365px;
+    }
+
+    .grid {
+        grid-template-rows: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
 
 @media (max-width:1024px) {
     .about_grid {
@@ -121,6 +141,22 @@
     }
 
     .about_img {
+        max-width: 290px;
+    }
+
+    .course_item {
+        max-width: 300px;
+    }
+
+    .course_item-img {
+        max-width: 255px;
+    }
+
+    .mentor_grid-item {
+        max-width: 300px;
+    }
+
+    .mentor_item-img {
         max-width: 290px;
     }
 }
