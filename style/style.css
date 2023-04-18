@@ -168,6 +168,13 @@ body {
   gap: 24px;
 }
 
+.about_item-titles {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 62px;
+  margin-bottom: 24px;
+}
+
 .about_item-title {
   font-weight: 700;
   font-size: 36px;
@@ -194,12 +201,6 @@ body {
   margin-bottom: 130px;
 }
 
-.about_item-title {
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 62px;
-  margin-bottom: 24px;
-}
 
 .about_item-txt {
   font-weight: 400;
