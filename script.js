@@ -71,3 +71,44 @@ class ScrollCard {
 }
 const scrollCard = new ScrollCard('.services')
 // scroll card
+
+// count2
+class Timer2 {
+    constructor(obj) {
+        this.timerNum = document.querySelectorAll(obj.timerNums)
+        this.timerSection = document.querySelector(obj.timerSection)
+        this.state = true
+        window.addEventListener('scroll', () => this.scrollTimer())
+    }
+    scrollTimer() {
+        if (this.state) {
+            if ((scrollY + window.innerHeight) >= this.timerSection.offsetTop) {
+                this.timerSet();
+                this.state = false;
+            }
+        }
+    }
+    timerSet() {
+        this.timerNum.forEach((nums) => {
+            const count = +nums.getAttribute("data-num");
+            nums.innerHTML = 0;
+
+            function timer(k = 0) {
+                nums.innerHTML = k
+                k++
+                if (k <= count) {
+                    setTimeout(() => {
+                        timer(k)
+                    }, 1);
+                }
+            }
+            timer()
+        });
+    }
+}
+
+const timer2 = new Timer2({
+    timerSection: '.numbers',
+    timerNums: '.number'
+})
+// count2
