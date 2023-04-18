@@ -48,4 +48,26 @@ const timer = new Timer({
 })
 // count
 
-// 
+// scroll card
+class ScrollCard {
+    constructor(obj) {
+        this.section = document.querySelector(obj);
+        window.addEventListener("scroll", () => this.fadeAnim(this.section, 2));
+    }
+    fadeAnim(section, coordinate) {
+        const fadeRight = section.querySelectorAll(".fade-right");
+
+        fadeRight.forEach((item) => {
+            const speed = item.getAttribute("data-speed");
+            item.style.transition = `${speed}ms`;
+
+            if (scrollY >= section.offsetTop - section.offsetHeight * coordinate) {
+                item.classList.add("active");
+            } else {
+                item.classList.remove("active");
+            }
+        });
+    }
+}
+const scrollCard = new ScrollCard('.services')
+// scroll card
