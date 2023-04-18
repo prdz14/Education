@@ -470,6 +470,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
+  gap: 30px;
 }
 
 .event_item {
@@ -496,6 +497,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.event_item-img {
+  width: 100%;
 }
 
 .numbers {

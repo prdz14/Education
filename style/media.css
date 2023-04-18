@@ -159,6 +159,10 @@
     .mentor_item-img {
         max-width: 290px;
     }
+
+    .event_item-down {
+        font-size: 12px;
+    }
 }
 
 @media (max-width:320px) {}
