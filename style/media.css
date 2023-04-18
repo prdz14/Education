@@ -13,9 +13,24 @@
         gap: 40px;
         justify-content: center;
     }
+
+    .services_grid {
+        grid-template-columns: repeat(3, 250px);
+        gap: 30px;
+    }
+
+    .services_item:nth-of-type(4) {
+        grid-column: 2 / 3;
+    }
 }
 
-@media (max-width:992px) {}
+@media (max-width:992px) {
+    .services_grid {
+        grid-template-columns: repeat(2, 250px);
+        gap: 30px;
+        justify-content: center;
+    }
+}
 
 @media (max-width:768px) {
     .nav_list {
@@ -83,6 +98,15 @@
 @media (max-width:586px) {
     .about_grid-item {
         text-align: center;
+    }
+
+    .services_grid {
+        grid-template-columns: 250px;
+        grid-template-rows: repeat(4, 240px);
+    }
+
+    .services_item:nth-of-type(4) {
+        grid-column: unset;
     }
 }
 
