@@ -8,27 +8,44 @@ burger.addEventListener('click', () => {
 // burger
 
 // count
-class Count {
+class Timer {
     constructor(obj) {
-        const countNumb = document.querySelectorAll('.about_item-title')
-        countNumb.forEach(numb => {
-            const count = +numb.getAttribute('data-num')
-            numb.innerHTML = 0
+        this.timerNum = document.querySelectorAll(obj.timerNums)
+        this.timerSection = document.querySelector(obj.timerSection)
+        this.state = true
+        window.addEventListener('scroll', () => this.scrollTimer())
+    }
+    scrollTimer() {
+        if (this.state) {
+            if ((scrollY + window.innerHeight) >= this.timerSection.offsetTop) {
+                this.timerSet();
+                this.state = false;
+            }
+        }
+    }
+    timerSet() {
+        this.timerNum.forEach((nums) => {
+            const count = +nums.getAttribute("data-num");
+            nums.innerHTML = 0;
+
             function timer(k = 0) {
-                numb.innerHTML = k
-                k++``
+                nums.innerHTML = k
+                k++
                 if (k <= count) {
                     setTimeout(() => {
                         timer(k)
-                    }, 5);
+                    }, 1);
                 }
             }
             timer()
-
-        })
-        console.log(countNumb);
+        });
     }
 }
 
-const count = new Count()
+const timer = new Timer({
+    timerSection: '.about',
+    timerNums: '.about_item-title'
+})
 // count
+
+// 
